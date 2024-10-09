@@ -162,7 +162,7 @@ footer {
 // ----------------------------------------
 
 .navigation {
-  display: flex;
+  display: none;
   height: 50px;
   justify-content: flex-end;
   align-items: center;
@@ -345,4 +345,96 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+@media (min-width: 1200px) {
+  // ----------------------------------------
+  // Général
+  // ----------------------------------------
+  header {
+    padding: 12px 42px;
+  }
+  footer {
+    margin-top: 120px;
+    padding: 30px 42px 90px 38px;
+  }
+  // ----------------------------------------
+  // Identité (titre + tagline)
+  // ----------------------------------------
+
+  .branding {
+    text-align: left;
+  }
+  .branding-title {
+    font-size: 50px;
+  }
+  // ----------------------------------------
+  // Burger (mobile uniquement)
+  // ----------------------------------------
+  .burger {
+    display: none;
+  }
+  // ----------------------------------------
+  // Navigation (desktop uniquement)
+  // ----------------------------------------
+  .navigation {
+    display: flex;
+  }
+  // ----------------------------------------
+  // Titre de section
+  // ----------------------------------------
+  .section-title {
+    font-size: 50px;
+  }
+  // ----------------------------------------
+  // Citation
+  // ----------------------------------------
+  .quote {
+    margin-top: 120px;
+    padding: 30px 30px;
+  }
+  .quote-content {
+    font-size: 34px;
+  }
+  .quote-source {
+    font-size: 18px;
+  }
+  // ----------------------------------------
+  // Aricles
+  // ----------------------------------------
+  .section-title {
+    font-size: 50px;
+    margin-top: 90px;
+  }
+  .article-content {
+    font-size: 18px;
+  }
+  // ----------------------------------------
+  // Opportunités
+  // ----------------------------------------
+  .opportunities {
+    margin: 90px 0px 30px;
+    padding: 30px 0;
+    background: var(--mauve);
+  }
+  .opportunities-title {
+    font-size: 50px;
+  }
+  .opportunity {
+    font-size: 34px;
+  }
+  // ----------------------------------------
+  // Footer
+  // ----------------------------------------
+  .footer-title {
+    font-size: 100px;
+    margin-bottom: 50px;
+  }
+  .footer-contact {
+    text-align: left;
+    font-size: 18px;
+  }
+  .footer-social {
+    justify-content: flex-end;
+  }
 }
